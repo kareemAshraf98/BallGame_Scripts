@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<head>
+<style>
+    nav{
+        display: inline; 
+        justify-content: space-between;
+        background-color: #111;
+        display: flex;
+    }
+  nav ul{
+
+        text-align: left;
+    }
+    li{
+        float: left;
+    }
+    li a{
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+    li a:hover{
+        background-color: #111;
+    }
+    form table{
+        width: 500px;
+        height: 300px;
+        background-color: lightgray;
+    }
+    form table tr {
+        background-color: lightskyblue;
+    }
+
+ 
+
+</style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a class="active" href="F:\ITI\Lab1\Road Map.html"> Home</a></li>
+            <li><a href="F:\ITI\Lab1\Home1.html"> Road Map</a></li>
+            <li><a href="F:\ITI\lab2\lab\form.html"> Registration Form</a></li>
+            <li><a href="#Contact Us"> Contact Us</a></li>
+        </ul>
+        <img src="./imgs/ITI_logo.png" alt="Full Stack Web" style="width: 150px;height:78px ;">
+    </nav>
+    <center>
+    <p><b><h2 style="color:green;">Register-Create Account</h2></b></p>
+    <p>Fields marked with * are compulsory</p>
+    <form>
+        <table>
+            <tr>
+                <td><label for="fname">*Your Name:</label></td>
+                <td><input type="text" id="fname" name="fname"></td>
+            </tr>
+            <tr>
+                <td><label for="Email">*E-Mail ID:</label></td>
+                <td><input type="email" id="email" name="email"></td>
+            </tr>
+            <tr>
+                <td><label for="Email">Alternate E-Mail ID:</label></td>
+                <td><input type="email" id="email" name="email"></td>
+            </tr>
+            <tr>
+                <td><label for="phone">Your phone</label></td>
+                <td><input type="text" id="phone"></td>
+            </tr>
+            <tr>
+                <td><label for="Mphone">Mobile Phone</label></td>
+                <td><input type="number" id="Mphone"></td>
+            </tr>
+            <tr>
+                <td><label for="postal">Your postal Address</label></td>
+                <td><textarea name="postal" rows="2" cols="20" ></textarea></td>
+            </tr>
+            <tr>
+                <td><label for="country">*country</label></td>
+                <td>
+                    <select name="country" id="country">
+                        <option required >--Select--</option>
+                        <option value="Egypt">Egypt</option>
+                        <option value="Germany">Germany</option>
+                        <option value="USA">USA</option>
+                        <option value="Turkey">Turkey</option>
+                       </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="pwd">*Password</label></td>
+                <td><input type="password" id="pwd"></td>
+            </tr>
+            <tr>
+                <td><label for="rpwd">*Re-Enter Password</label></td>
+                <td><input type="password" id="rpwd"></td>
+            </tr>
+
+        </table>
+        <center><td><input type="checkbox" id="cbx"><label for="cbx">I accept the <u style="color:blue ;"><u>Terms Of Use</u></label></td><br>
+            <br>
+            <input type="button" onclick="alert('Register Sccuessfully')" value="Countinue >>">&nbsp;&nbsp;
+            <input type="reset">
+        </center>
+    </form>
+    </center>
+    <footer>
+        <hr>
+        <p style="text-align: center;">Copyright 2022 by Noha Salah &reg;. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
